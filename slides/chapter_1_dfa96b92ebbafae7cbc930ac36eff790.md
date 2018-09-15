@@ -113,27 +113,58 @@ key: "9e2bb70cfe"
 ```
 
 `@part1`
-- Retrieve all columns from the Sales table
+- Retrieve all columns from the Sales table {{1}}
 
-`SELECT * FROM SALES`
+`SELECT * FROM SALES` {{2}}
 
-> Question:  What's the overall sales look like?
+**Question:  What's the overall sales look like? ** {{3}}
 
-`SELECT Rank, Name, Platform, Year, Genre, GLobal_Sales FROM SALES`
+`SELECT Rank, Name, Platform, Year, Genre, GLobal_Sales FROM SALES` {{4}}
 
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-15%20at%2023.52.37.png?raw=True)
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-15%20at%2023.52.37.png?raw=True) {{5}}
 
 
 `@script`
-First case study, a dataset from Video Game Global Sales. This dataset is based on a Kaggle's competition. Imagine that you work in a video game industry and you are tasked to carry out market research. Your job is to analyse sales trend. 
+First case study, we will use a dataset from Video Game Global Sales. This dataset is based on a Kaggle's competition. Imagine that you work in a video game industry and you are tasked to carry out market research. Your job is to analyse sales trend. 
 
-First, lets retrieve all columns from the Sales table by executing the SELECT statement here. 
+First, lets retrieve all columns from the Sales table by executing the SELECT statement below:
 
-Here, you want to explore annual sales of game consoles and the ranking information. You can revise the first query by only retrieving the columns you want in your result.
+The first question you may want answered is: What's all sales look like?
+
+You can revise the first query by only retrieving the columns you want in your result.
 
 
 ---
-## Case Study: Video Game Sales Analysis
+## WHERE and ORDER BY
+
+```yaml
+type: "FullSlide"
+key: "73171c367d"
+```
+
+`@part1`
+- WHERE is used to apply condition(s) to a query.
+
+- ORDER BY is used to sort result set
+
+**List records of Sales in 2016? **
+
+`SELECT Rank, Name, Platform, Year, Genre, GLobal_Sales FROM SALES
+WHERE Year = 2016 ORDER BY Rank` 
+
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.14.48.png?raw=true)
+
+
+`@script`
+WHERE is used to apply condition(s) to a query. It can filter out the rows that we want to show.
+ 
+In our case the only rows we want to consider are those where the value of the year column is 2016. 
+
+You can improve queries built earlier by adding WHERE keyword followed by condition to apply, in this case its Year = 2016
+
+
+---
+## Text Fields vs. Numeric Fields
 
 ```yaml
 type: "FullSlide"
@@ -141,15 +172,11 @@ key: "84c343c104"
 ```
 
 `@part1`
-`SELECT` statement be followed by columns and or expression
-
-- `JP_Sales + - EU_Sales`
-
-WHERE clause can use logical operators such as AND, OR to filter  only rows where conditions in WHERE clause is met will return in there result.
+SQL requires single quotes around text values  while this may differ in other database platforms e.g use of double quotes instead. However, numeric fields should not be enclosed in quotes:
 
 
 `@script`
-
+SQL requires single quotes around text values  while this may differ in other database platforms e.g use of double quotes instead. However, numeric fields should not be enclosed in quotes:
 
 
 ---
