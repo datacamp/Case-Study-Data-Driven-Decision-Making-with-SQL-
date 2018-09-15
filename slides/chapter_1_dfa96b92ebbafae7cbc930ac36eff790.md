@@ -129,7 +129,7 @@ Always remember to only retrieve columns that you need (as it may cause performa
 
 
 ---
-## `Case` Studies: Video Games Global Sales database
+## Case Studies: Video Games Global Sales database
 
 ```yaml
 type: "FullSlide"
@@ -191,8 +191,8 @@ You can improve queries built earlier by adding WHERE keyword followed by condit
 ## Text Fields vs. Numeric Fields
 
 ```yaml
-type: "FullSlide"
-key: "84c343c104"
+type: "TwoColumns"
+key: "b7e5a08489"
 ```
 
 `@part1`
@@ -202,15 +202,44 @@ key: "84c343c104"
 
 - Numeric fields should not be enclosed in quotes
 
-`SELECT Rank, Name, Platform, Year, Genre FROM SALES WHERE Name = 'FIFA 17'`
+
+`@part2`
+**Question:  How does FIFA 17 game perform through the year? ** 
+
+`SELECT Rank, Name, Platform, Year, Genre FROM SALES 
+WHERE Name = 'FIFA 17'`
+
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.50.29.png?raw=true)
 
 
 `@script`
-SQL requires single quotes around text values  while this may differ in other database platforms e.g use of double quotes instead. However, numeric fields should not be enclosed in quotes:
+SQL requires single quotes around text values  while this may differ in other database platforms e.g use of double quotes instead. However, numeric fields should not be enclosed in quotes
+
+We will learn more about these two data types in later chapters.
 
 
 ---
-## Let's get practice!
+## Summarising data
+
+```yaml
+type: "FullSlide"
+key: "b68404a3f8"
+```
+
+`@part1`
+- Simple aggregate functions such as count, minimum, maximum, average, and sum 
+
+- GROUP BY
+
+- HAVING
+
+
+`@script`
+The most interesting functions of SQL
+
+
+---
+## Practice time!
 
 ```yaml
 type: "FinalSlide"
