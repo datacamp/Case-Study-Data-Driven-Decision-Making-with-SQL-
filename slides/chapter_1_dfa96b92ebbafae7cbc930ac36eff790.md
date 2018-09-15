@@ -119,7 +119,9 @@ key: "9e2bb70cfe"
 
 > Question:  What's the overall sales look like?
 
-`SELECT Rank, Name, Platform, Year, Total_Sales FROM SALES`
+`SELECT Rank, Name, Platform, Year, Genre, GLobal_Sales FROM SALES`
+
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-15%20at%2023.52.37.png?raw=True)
 
 
 `@script`
