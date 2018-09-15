@@ -31,22 +31,35 @@ key: "19ff28420e"
 ```
 
 `@part1`
-- Stands for Structured Query Language
+- Structured Query Language {{2}}
 
-- Used to accessing relational databases 
+- Used to accessing & interrogating relational databases {{3}}
 
-- Perform fundamental data exploring tasks such as
+- Perform fundamental data exploring tasks such as {{4}}
 
-    - retrieve data
+    - retrieve data {{5}}
 
-    - manipulate data 
+    - manipulate data {{6}}
 
-    - aggregate data
-
-- and many more
+    - aggregate data {{7}}
 
 
 `@script`
+- Structured Query Language
+
+- Used to accessing & interrogating relational databases (is a language that is widely used by different database platforms and as a result some SQL syntax and functions may vary however pretty much similar and pretty much standard)
+Perform fundamental data exploring tasks such as 
+retrieve data
+manipulate data 
+aggregate data 
+You will learn how to build a simple SQL query
+SQL Syntax SELECT...FROM
+(more advanced queries that include ) SQL aggregated functions
+Difference type of JOINs when working with multiple tables
+
+
+
+
 Why do we use SQL to assist us with data driven decisions? 
 
 one of the first reasons would be that companies mostly store data in Relational Database Management Systems (RDBMS) or in Relational Data Stream Management Systems (RDSMS) and you need SQL to access that data. SQL is the lingua franca of data: it gives you the ability to interact with almost any database or to even build your own locally!
@@ -55,6 +68,29 @@ Not only SQL is a must-have skill for data scientists,
 What is SQL?
 
 Used to accessing relational databases (is a language that is widely used by different database platforms and as a result some SQL syntax and functions may vary however pretty much similar and pretty much standard)
+
+
+---
+## Basic SQL Query
+
+```yaml
+type: "FullSlide"
+key: "5ee4acfdd2"
+```
+
+`@part1`
+- Retrieving data using SELECT keyword {{1}}
+
+- Summarising data with SQL aggregated functions {{2}}
+
+- Difference type of JOINs when working with multiple tables {{3}}
+
+
+`@script`
+- Retrieving data using SELECT keyword (typical first task to perform on data analysis is to retrieve data, you will use SELECT statement to perform this task) 
+
+more advanced queries that include ) SQL aggregated functions
+Difference type of JOINs when working with multiple tables
 
 
 ---
