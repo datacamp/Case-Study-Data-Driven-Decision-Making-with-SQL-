@@ -71,6 +71,32 @@ Used to accessing relational databases (is a language that is widely used by dif
 
 
 ---
+## What is relational database?
+
+```yaml
+type: "FullSlide"
+key: "b6de51e38e"
+```
+
+`@part1`
+Table = database object where data is stored. It has field(s) and  column(s)
+
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.27.11.png?raw=true)
+
+
+`@script`
+Before deep diving into SQL, it’s important to have a basic understanding of relational database concept.
+
+Relational databases organize data into “tables” consisting of rows and columns. Each column in a database has a specific data type text, number, date and so on. 
+
+There are multiple database platforms as a result SQL will vary slightly. on this course we will focus on MS SQL Database. However if you chose to focus on a different environment such as PosgresSQL, Datacamp also offers a course “Joining data in Postgresql course” by Chester Ismay which may interest you.
+
+Later in the course you will see the difference types of aggregated functions which only work with certain data types. 
+
+Once you understand the basis of SQL syntax and functions when working with a relational database, you will be able to apply techniques to solve real world problems with confidence.
+
+
+---
 ## Basic SQL Query
 
 ```yaml
@@ -84,8 +110,6 @@ key: "5ee4acfdd2"
 - `SELECT * FROM <Table Name>`
  
 - `SELECT <Field1>, <Field2>, <Field3> FROM <Table Name>`
-
-## <PICTURE>
 
 - Always remember to only retrieve columns that you need. 
 
@@ -143,9 +167,9 @@ key: "73171c367d"
 ```
 
 `@part1`
-- WHERE is used to apply condition(s) to a query.
+- WHERE is used to apply condition(s) to a query
 
-- ORDER BY is used to sort result set
+- ORDER BY is used if the result rows should be in a specific order
 
 **List records of Sales in 2016? **
 
@@ -172,7 +196,13 @@ key: "84c343c104"
 ```
 
 `@part1`
-SQL requires single quotes around text values  while this may differ in other database platforms e.g use of double quotes instead. However, numeric fields should not be enclosed in quotes:
+- In this database, there are 2 data types: Text and Numeric
+
+- Text requires single quotes around text values 
+
+- Numeric fields should not be enclosed in quotes
+
+`SELECT Rank, Name, Platform, Year, Genre FROM SALES WHERE Name = 'FIFA 17'`
 
 
 `@script`
