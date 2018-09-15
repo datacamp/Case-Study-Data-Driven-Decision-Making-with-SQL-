@@ -79,22 +79,33 @@ key: "5ee4acfdd2"
 ```
 
 `@part1`
-- Retrieving data using SELECT keyword {{1}}
+- `SELECT <Field Names> FROM <Table Name> ` 
 
-- Summarising data with SQL aggregated functions {{2}}
+- `SELECT * FROM <Table Name>`
+ 
+- `SELECT <Field1>, <Field2>, <Field3> FROM <Table Name>`
 
-- Difference type of JOINs when working with multiple tables {{3}}
+## <PICTURE>
+
+- Always remember to only retrieve columns that you need. 
+
+- `SELECT *` may cause performance to suffer from the fact that your query pulls up too much data)
 
 
 `@script`
-- Retrieving data using SELECT keyword (typical first task to perform on data analysis is to retrieve data, you will use SELECT statement to perform this task) 
+- `SELECT <Field Names> FROM <Table Name> ` 
 
-more advanced queries that include ) SQL aggregated functions
-Difference type of JOINs when working with multiple tables
+- `SELECT * FROM Sales`
+ 
+- `SELECT Year,Publisher, Revenue FROM Sales`
+
+## <PICTURE>
+
+Always remember to only retrieve columns that you need (as it may cause performance to suffer from the fact that your query pulls up too much data)
 
 
 ---
-## Case Studies
+## Case Studies: Video Games Global Sales database
 
 ```yaml
 type: "FullSlide"
@@ -102,52 +113,17 @@ key: "9e2bb70cfe"
 ```
 
 `@part1`
-1. Video Games Sales
-2. Speed Dating Experiment
-3. Daily Happiness and Staff Turnover
-4. Refugee Analysis
+- Retrieve all columns from the Sales table
+
+`SELECT * FROM SALES`
+
+> give info
 
 
 `@script`
+First case study, a dataset from Video Game Global Sales. This dataset is based on a Kaggle's competition. Imagine that you work in a video game industry and you are tasked to carry out market research. Your job is to analyse sales trend. 
 
-
-
----
-## Basic SQL query
-
-```yaml
-type: "FullCodeSlide"
-key: "fdaac2c0b1"
-```
-
-`@part1`
-You will learn:
-
-- Build a basic query using `SELECT` keyword
-
-- List of columns and expressions
-
-- `FROM` clause
-
-- `WHERE` and `ORDER BY`
-
-`SELECT <column or column expression>`
-
-`SELECT Rank, Name, Platform, Year, Genre FROM SALES`
-
-
-`@script`
-Select statement begins with the SELECT keyword followed by a column or list of columns you wish to include in the result set.
-
-For example, you can choose a single column from a table sales using this expression
-
-[code]
-
-To complete this query statement, you will add FROM clause. In this chapter you will use statements that have just a single table following FROM clause.
-
-The WHERE and ORDER BY clause are optional and can be used to filter and sort the data which will be explained in later chapters.
-
-For this chapter, you'll be using a database containing Kaggle's Video Game Global Sales information. To the right, underneath the editor, you can see the data in this a table of the database
+First, lets retrieve all columns from the Sales table by executing the SELECT statement here. As, mentioned in the previous slide
 
 
 ---
