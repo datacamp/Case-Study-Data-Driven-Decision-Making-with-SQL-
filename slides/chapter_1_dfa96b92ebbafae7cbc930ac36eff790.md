@@ -17,7 +17,9 @@ title: Business Intelligent Specialist / Data Scientist
 
 
 `@script`
+Hi, I am Nujcharee Haswell (Ped), welcome to this course “Case Study: Data Driven Decision Making with SQL”. 
 
+In this video, you'll be learning about building basic SQL queries.
 
 
 ---
@@ -29,6 +31,8 @@ key: "19ff28420e"
 ```
 
 `@part1`
+- Stands for Structured Query Language
+
 - Used to accessing relational databases 
 
 - Perform fundamental data exploring tasks such as
@@ -39,13 +43,18 @@ key: "19ff28420e"
 
     - aggregate data
 
-- Many more
+- and many more
 
 
 `@script`
+Why do we use SQL to assist us with data driven decisions? 
+
+one of the first reasons would be that companies mostly store data in Relational Database Management Systems (RDBMS) or in Relational Data Stream Management Systems (RDSMS) and you need SQL to access that data. SQL is the lingua franca of data: it gives you the ability to interact with almost any database or to even build your own locally!
+
+Not only SQL is a must-have skill for data scientists,  
 What is SQL?
 
-In this course, you will learn about
+Used to accessing relational databases (is a language that is widely used by different database platforms and as a result some SQL syntax and functions may vary however pretty much similar and pretty much standard)
 
 
 ---
