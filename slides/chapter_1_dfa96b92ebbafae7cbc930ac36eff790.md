@@ -117,13 +117,13 @@ key: "9e2bb70cfe"
 
 `SELECT * FROM SALES`
 
-> give info
+> Question:  give info
 
 
 `@script`
 First case study, a dataset from Video Game Global Sales. This dataset is based on a Kaggle's competition. Imagine that you work in a video game industry and you are tasked to carry out market research. Your job is to analyse sales trend. 
 
-First, lets retrieve all columns from the Sales table by executing the SELECT statement here. As, mentioned in the previous slide
+First, lets retrieve all columns from the Sales table by executing the SELECT statement here. As, mentioned in the previous slide, only retrieve the data that you need.
 
 
 ---
