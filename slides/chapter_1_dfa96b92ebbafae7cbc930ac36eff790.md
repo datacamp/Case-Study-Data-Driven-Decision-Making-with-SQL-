@@ -105,12 +105,11 @@ key: "5ee4acfdd2"
 ```
 
 `@part1`
-- `SELECT <Field Names> FROM <Table Name> ` 
-
-- `SELECT * FROM <Table Name>`
- 
-- `SELECT <Field1>, <Field2>, <Field3> FROM <Table Name>`
-
+```
+SELECT <Field Names> FROM <Table Name>
+SELECT * FROM <Table Name>
+SELECT <Field1>, <Field2>, <Field3> FROM <Table Name>
+```
 - Always remember to only retrieve columns that you need. 
 
 - `SELECT *` may cause performance to suffer from the fact that your query pulls up too much data)
@@ -139,11 +138,14 @@ key: "9e2bb70cfe"
 `@part1`
 - Retrieve all columns from the Sales table {{1}}
 
-`SELECT * FROM SALES` {{2}}
-
+```
+SELECT * FROM SALES`
+``` {{2}}
 **Question:  What's the overall sales look like? ** {{3}}
 
-`SELECT Rank, Name, Platform, Year, Genre, GLobal_Sales FROM SALES` {{4}}
+```
+SELECT Rank, Name, Platform, Year, Genre, GLobal_Sales FROM SALES
+``` {{4}}
 
 ![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-15%20at%2023.52.37.png?raw=True) {{5}}
 
@@ -173,8 +175,10 @@ key: "73171c367d"
 
 **List records of Sales in 2016? **
 
-`SELECT Rank, Name, Platform, Year, Genre, GLobal_Sales FROM SALES
-WHERE Year = 2016 ORDER BY Rank` 
+```
+SELECT Rank, Name, Platform, Year, Genre, GLobal_Sales FROM SALES
+WHERE Year = 2016 ORDER BY Rank
+``` 
 
 ![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.14.48.png?raw=true)
 
@@ -229,9 +233,10 @@ key: "b68404a3f8"
 `@part1`
 - Simple aggregate functions such as count, minimum, maximum, average, and sum 
 
-- GROUP BY
+```
+SELECT AVG(Global_Sales) FROM Sales
 
-- HAVING
+```
 
 
 `@script`
