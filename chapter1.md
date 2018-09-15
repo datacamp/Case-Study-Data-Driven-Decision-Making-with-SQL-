@@ -51,3 +51,15 @@ Do some data science.
 ```
 
 
+---
+
+## Case Study: Data Driven Decision Making with SQL 
+
+```yaml
+type: VideoExercise 
+xp: 50 
+key: d12207f973   
+```
+
+`@projector_key`
+dfa96b92ebbafae7cbc930ac36eff790
