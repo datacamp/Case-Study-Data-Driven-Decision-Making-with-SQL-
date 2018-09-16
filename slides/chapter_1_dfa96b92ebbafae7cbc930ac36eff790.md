@@ -71,50 +71,19 @@ key: "9810dbbd56"
 ```
 
 `@part1`
-- Data organised in "Table" objects 
+- Data organised in "Table" objects {{1}} 
     
-    - columns
+    - columns {{2}}
     
-    - records
+    - rows {{3}}
 
-- More than one tables in the database
+- More than one tables in the database {{4}}
 
-- Can JOIN these tables to build queries where relationship between tables exist
+- Can JOIN these tables to build queries where relationship between tables exist {{5}}
 
 
 `@part2`
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2019.56.50.png?raw=true) {{2}}
-
-
-`@script`
-Before deep diving into SQL, it’s important to have a basic understanding of relational database concept.
-
-Relational databases organise data into “tables” consisting of rows and columns. Each column in a database has a specific data type text, number, date and so on. 
-
-There are multiple database platforms as a result SQL will vary slightly. on this course we will focus on MS SQL Database. However if you chose to focus on a different environment such as PosgresSQL, Datacamp also offers a course “Joining data in Postgresql course” by Chester Ismay which may interest you.
-
-Later in the course you will see the difference types of aggregated functions which only work with certain data types. 
-
-Once you understand the basis of SQL syntax and functions when working with a relational database, you will be able to apply techniques to solve real world problems with confidence.
-
-
----
-## What is relational database?
-
-```yaml
-type: "FullSlide"
-key: "b6de51e38e"
-```
-
-`@part1`
-- Tables
-    
-    - fields / columns
-    
-    - rows / records
-
-
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.27.11.png?raw=true) {{2}}
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2019.56.50.png?raw=true) {{3}}
 
 
 `@script`
@@ -287,6 +256,14 @@ SELECT SUM(Global_Sales) FROM Sales;
 ``` {{2}}
 
 - GROUP BY split the table into different piles based on the value of each row {{3}}
+
+**Question:  What is Nintendo's highest selling of all time? ** {{4}}
+
+```
+SELECT MAX(NA_SALES) FROM SALES WHERE Publisher = 'Nintendo';
+``` {{5}}
+
+**Answer: $41.49 million ** {{6}}
 
 
 `@script`
