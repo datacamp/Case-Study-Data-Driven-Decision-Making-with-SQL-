@@ -43,6 +43,8 @@ key: "19ff28420e"
 
     - summarise data {{7}}
 
+- Many more {{8}}
+
 
 `@script`
 - Structured Query Language
@@ -110,19 +112,19 @@ key: "fbb750e826"
 ```
 
 `@part1`
-- Tables
-    
-    - fields / columns (e.g text, number, date)
-    
-    - rows / records
-
-- Many SQL platforms 
-
--
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.27.11.png?raw=true) {{1}}
 
 
 `@part2`
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.27.11.png?raw=true) {{2}}
+- Tables {{1}}
+    
+    - fields / columns (e.g text, number, date) {{2}}
+    
+    - rows / records {{3}}
+
+- Many database platforms have their own SQL syntax / functions {{4}}
+
+- SQL may vary, fundamentally very similar and pretty much standard {{5}}
 
 
 `@script`
@@ -155,7 +157,7 @@ SELECT <Field1>, <Field2>, <Field3> FROM <Table Name>;
 ``` {{2}}
 - Always remember to only retrieve columns that you need {{3}}
 
-- `SELECT *` may cause performance to suffer from the fact that your query pulls up too much data) {{4}}
+- `SELECT *` may cause performance to suffer from the fact the query pulls up too much data {{4}}
 
 - The semi-colon (;) indicates that SQL statment is complete and is ready to be interpreted {{5}}
 
@@ -179,7 +181,7 @@ key: "9e2bb70cfe"
 ```
 
 `@part1`
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2011.29.09.png?raw=true)
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2011.29.09.png?raw=true) {{1}}
 
 ```
 SELECT * FROM SALES;
@@ -201,7 +203,7 @@ Let's have a quick glance over the Sales table here. Think about the SELECT stat
 
 First, you will use SELECT * (asterisk) FROM Sales;
 
-The first question you may want answered is: What's all sales look like?
+The first question you may want answered is: What's all sales look like? Let's think about how you will write this in a select statement.
 
 You can revise the first query by only retrieving the columns you want in your result.
 
@@ -219,22 +221,26 @@ key: "73171c367d"
 
 - ORDER BY is used if the result rows should be in a specific order {{2}}
 
-**List records of Sales in 2016? **
+**Question: What games were sold in 2016? **
 {{3}}
-```
-SELECT Rank, Name, Platform, Year, Genre, GLobal_Sales FROM SALES
-WHERE Year = 2016 ORDER BY Rank
-``` {{4}}
 
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.14.48.png?raw=true) {{5}}
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.14.48.png?raw=true) {{4}}
+
+```
+SELECT Rank, Name, Platform, Year, Genre, Global_Sales FROM SALES
+WHERE Year = 2016 ORDER BY Rank
+``` {{5}}
+
+**Answer: Looks like soccer on PS4 is doing pretty awesome worldwide! **
+{{6}}
 
 
 `@script`
-WHERE is used to apply condition(s) to a query. It can filter out the rows that we want to show.
- 
-In our case the only rows we want to consider are those where the value of the year column is 2016. 
+WHERE and ORDER keywords are optional from select statement.
 
-You can improve queries built earlier by adding WHERE keyword followed by condition to apply, in this case its Year = 2016
+WHERE is used to apply condition(s) to a query. It can filter out the rows that we want to show while ORDER BY is used if the result rows should be in a specific order
+ 
+Let's look at this question. What games were sold in year 2016? Think about what select statement requires to return this result.
 
 
 ---
