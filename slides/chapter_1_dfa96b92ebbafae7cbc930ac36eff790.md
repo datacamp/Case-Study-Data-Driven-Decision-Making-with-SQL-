@@ -17,7 +17,7 @@ title: Business Intelligent Specialist / Data Scientist
 
 
 `@script`
-Hi, I am Nujcharee Haswell (Ped), welcome to this course “Case Study: Data Driven Decision Making with SQL”. 
+Hi, I am Nujcharee Haswell (Ped), welcome to the course “Case Study: Data Driven Decision Making with SQL”. 
 
 In this video, you'll be learning about building basic SQL queries.
 
@@ -91,9 +91,9 @@ Before deep diving into SQL, it’s important to have a basic understanding of r
 
 Relational databases organise data into “tables” consisting of rows and columns. Each column in a database has a specific data type text, number, date and so on. 
 
-There are multiple database platforms as a result SQL will vary slightly. on this course we will focus on MS SQL Database. However if you chose to focus on a different environment such as PosgresSQL, Datacamp also offers a course “Joining data in Postgresql course” by Chester Ismay which may interest you.
+There are usually more than one tables in a database.
 
-Later in the course you will see the difference types of aggregated functions which only work with certain data types. 
+They can be joined to build queries where relationships between tables exist.
 
 Once you understand the basis of SQL syntax and functions when working with a relational database, you will be able to apply techniques to solve real world problems with confidence.
 
@@ -124,11 +124,11 @@ SELECT <Field1>, <Field2>, <Field3> FROM <Table Name>;
 `@script`
 A Select statement begins with SELECT keyword followed by FROM clause.
 
-The top select statement will retrieve data from a single column from a single table. While the second select statement select ALL columns within a table. Last select statement select three fields from a table.
+The top select statement will retrieve data from a single column from a single table. While the second select statement select ALL columns within a table. Last select statement select three columns from a table.
 
 Always remember to only retrieve columns that you need as SELECT ALL columns may cause performance to suffer from the fact that query pulls up too much data)
 
-It is also a good practise to always put the semi-colon (;) which indicates that SQL statment is complete and is ready to be interpreted
+It is also a good practise to always put the semi-colon (;) which indicates that SQL statement is complete and is ready to be interpreted
 
 
 ---
@@ -145,7 +145,7 @@ key: "9e2bb70cfe"
 ```
 SELECT * FROM SALES;
 ``` {{2}}
-**Question:  What is the name of Number 1 game in year 2006? ** {{3}}
+**Question:  What is the name of Number 1 game in 2006? ** {{3}}
 
 ```
 SELECT Name, Year FROM Sales where Rank = 1;
@@ -160,9 +160,9 @@ We will use a database from Kaggle's Video Game Global Sales competition. Imagin
 
 Let's have a quick glance over the Sales table here. Think about the SELECT statement needed to retrieve ALL columns from this table.
 
-First, you will use SELECT * (asterisk) FROM Sales;
+You will use SELECT * (asterisk) FROM Sales;
 
-The first question you may want answered is: What's all sales look like? Let's think about how you will write this in a select statement.
+The first question you may want answered is: What is the name of Number 1 game in 2006? Let's think about how you will write this in a select statement.
 
 You can revise the first query by only retrieving the columns you want in your result.
 
@@ -199,7 +199,7 @@ WHERE and ORDER keywords are optional from select statement.
 
 WHERE is used to apply condition(s) to a query. It can filter out the rows that we want to show while ORDER BY is used if the result rows should be in a specific order
  
-Let's look at this question. What games were sold in year 2016? Think about what select statement requires to return this result.
+Let's look at this question. What games were sold in 2016? Think about what select statement requires to return this result.
 
 
 ---
@@ -230,6 +230,10 @@ Recall from the previous slides that Sale table is consisted of text and numeric
 SQL requires single quotes around text values  while this may differ in other database platforms e.g use of double quotes instead. However, numeric fields should not be enclosed in quotes
 
 We will learn more about these two data types in later chapters.
+
+Let's try to find answer for this question. How does the game FIFA 17 perform in 2016?
+
+Think about how you will formulate the query.
 
 
 ---
