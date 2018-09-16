@@ -219,15 +219,15 @@ key: "b7e5a08489"
 ```
 
 `@part1`
-- In this database, there are 2 data types: Text and Numeric
+- In this table, there are 2 data types: Text and Numeric {{1}}
 
-- Text requires single quotes around text values 
+- Text requires single quotes around text values {{2}}
 
-- Numeric fields should not be enclosed in quotes
+- Numeric fields should not be enclosed in quotes {{3}}
 
 
 `@part2`
-**Question:  How does FIFA 17 game perform through the year? ** 
+**Question:  How does FIFA 17 game perform through the year? ** {{4}}
 
 ```
 SELECT Rank
@@ -236,10 +236,10 @@ SELECT Rank
 , Year
 , Genre 
 FROM SALES 
-WHERE Name = 'FIFA 17'
-```
+WHERE Name = 'FIFA 17' 
+``` {{5}}
 
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.50.29.png?raw=true)
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.50.29.png?raw=true) {{6}}
 
 
 `@script`
@@ -271,7 +271,7 @@ SELECT MAX(Global_Sales) FROM Sales;
 SELECT SUM(Global_Sales) FROM Sales; 
 ``` {{2}}
 
-- GROUP BY split the table into different piles based on the value of each row
+- GROUP BY split the table into different piles based on the value of each row {{3}}
 
 
 `@script`
