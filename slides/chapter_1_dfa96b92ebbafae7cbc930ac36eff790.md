@@ -145,7 +145,7 @@ key: "9e2bb70cfe"
 ```
 SELECT * FROM SALES;
 ``` {{2}}
-**Question:  What is the name of the game at Number 1 in year 2006 ** {{3}}
+**Question:  What is the name of Number 1 game in year 2006? ** {{3}}
 
 ```
 SELECT Name, Year FROM Sales where Rank = 1;
@@ -187,7 +187,7 @@ key: "73171c367d"
 
 ```
 SELECT Rank, Name, Platform, Year, Genre, Global_Sales FROM SALES
-WHERE Year = 2016 ORDER BY Rank
+WHERE Year = 2016 ORDER BY Rank;
 ``` {{5}}
 
 **Answer: Looks like soccer on PS4 is doing pretty awesome worldwide! **
@@ -215,7 +215,7 @@ key: "c48ac2161e"
 
 - Numeric fields should not be enclosed in quotes {{3}}
 
-**Question:  How does FIFA 17 game perform through the year? ** {{4}}
+**Question:  How does the game FIFA 17 perform in 2016? ** {{4}}
 
 ```
 SELECT Rank , Name, Platform, Year, Genre FROM SALES WHERE Name = 'FIFA 17' 
