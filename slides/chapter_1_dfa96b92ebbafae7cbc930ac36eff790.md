@@ -71,17 +71,19 @@ key: "9810dbbd56"
 ```
 
 `@part1`
-- Tables
+- Data organised in "Table" objects 
     
-    - fields / columns
+    - columns
     
-    - rows / records
+    - records
 
-- Relationship between tables
+- More than one tables in the database
+
+- Can JOIN these tables to build queries where relationship between tables exist
 
 
 `@part2`
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.27.11.png?raw=true) {{2}}
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2019.56.50.png?raw=true) {{2}}
 
 
 `@script`
