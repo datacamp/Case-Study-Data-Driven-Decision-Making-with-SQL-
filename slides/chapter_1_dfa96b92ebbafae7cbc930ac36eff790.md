@@ -23,22 +23,6 @@ In this video, you'll be learning about building basic SQL queries.
 
 
 ---
-## Why SQL?
-
-```yaml
-type: "FullSlide"
-key: "261a7ff134"
-```
-
-`@part1`
-SQL
-
-
-`@script`
-
-
-
----
 ## What is SQL?
 
 ```yaml
@@ -57,7 +41,7 @@ key: "19ff28420e"
 
     - manipulate data {{6}}
 
-    - aggregate data {{7}}
+    - summarise data {{7}}
 
 
 `@script`
@@ -95,15 +79,56 @@ key: "b6de51e38e"
 ```
 
 `@part1`
-Table = database object where data is stored. It has field(s) and  column(s)
+- Tables
+    
+    - fields / columns
+    
+    - rows / records
 
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.27.11.png?raw=true)
+
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.27.11.png?raw=true) {{2}}
 
 
 `@script`
 Before deep diving into SQL, it’s important to have a basic understanding of relational database concept.
 
-Relational databases organize data into “tables” consisting of rows and columns. Each column in a database has a specific data type text, number, date and so on. 
+Relational databases organise data into “tables” consisting of rows and columns. Each column in a database has a specific data type text, number, date and so on. 
+
+There are multiple database platforms as a result SQL will vary slightly. on this course we will focus on MS SQL Database. However if you chose to focus on a different environment such as PosgresSQL, Datacamp also offers a course “Joining data in Postgresql course” by Chester Ismay which may interest you.
+
+Later in the course you will see the difference types of aggregated functions which only work with certain data types. 
+
+Once you understand the basis of SQL syntax and functions when working with a relational database, you will be able to apply techniques to solve real world problems with confidence.
+
+
+---
+## What is relational database?
+
+```yaml
+type: "TwoColumns"
+key: "fbb750e826"
+```
+
+`@part1`
+- Tables
+    
+    - fields / columns (e.g text, number, date)
+    
+    - rows / records
+
+- Many SQL platforms 
+
+-
+
+
+`@part2`
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.27.11.png?raw=true) {{2}}
+
+
+`@script`
+Before deep diving into SQL, it’s important to have a basic understanding of relational database concept.
+
+Relational databases organise data into “tables” consisting of rows and columns. Each column in a database has a specific data type text, number, date and so on. 
 
 There are multiple database platforms as a result SQL will vary slightly. on this course we will focus on MS SQL Database. However if you chose to focus on a different environment such as PosgresSQL, Datacamp also offers a course “Joining data in Postgresql course” by Chester Ismay which may interest you.
 
@@ -136,14 +161,13 @@ SELECT <Field1>, <Field2>, <Field3> FROM <Table Name>;
 
 
 `@script`
-- `SELECT <Field Names> FROM <Table Name> ` 
+A Select statement begins with SELECT keyword followed by FROM clause.
 
-- `SELECT * FROM Sales`
- 
-- `SELECT Year,Publisher, Revenue FROM Sales`
+The top select statement will retrieve data from a single column from a single table. While the second select statement select ALL columns within a table. Last select statement select three fields from a table.
 
+Always remember to only retrieve columns that you need as SELECT ALL columns may cause performance to suffer from the fact that query pulls up too much data)
 
-Always remember to only retrieve columns that you need (as it may cause performance to suffer from the fact that your query pulls up too much data)
+It is also a good practise to always put the semi-colon (;) which indicates that SQL statment is complete and is ready to be interpreted
 
 
 ---
@@ -157,26 +181,23 @@ key: "9e2bb70cfe"
 `@part1`
 ![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2011.29.09.png?raw=true)
 
-- Retrieve all columns from the Sales table {{1}}
-
 ```
-SELECT * FROM SALES`
+SELECT * FROM SALES;
 ``` {{2}}
-**Question:  What's the overall sales look like? ** {{3}}
+**Question:  What is the name of the game at Number 1 in year 2006 ** {{3}}
 
 ```
-SELECT Rank, Name, Platform, Year, Genre, GLobal_Sales FROM SALES
+SELECT Name, Year FROM Sales where Rank = 1;
 ``` {{4}}
-
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-15%20at%2023.52.37.png?raw=True) {{5}}
+**Answer:  Wii Sport ** {{5}}
 
 
 `@script`
 Let's practice this in the first case study.
 
-First case study, we will use a database from Kaggle's Video Game Global Sales competition. Imagine that you work in a video game industry and you are tasked to carry out a market research. Your job is to analyse sales trend. 
+We will use a database from Kaggle's Video Game Global Sales competition. Imagine that you work in a video game industry and you are tasked to carry out a market research. Your job is to analyse sales trend. 
 
-Let's have a quick glance over the Sales table. Think about the SELECT statement needed to retrieve data ALL columns in this table.
+Let's have a quick glance over the Sales table here. Think about the SELECT statement needed to retrieve ALL columns from this table.
 
 First, you will use SELECT * (asterisk) FROM Sales;
 
