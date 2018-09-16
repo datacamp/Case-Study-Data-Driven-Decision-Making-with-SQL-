@@ -219,6 +219,7 @@ key: "c48ac2161e"
 
 ```
 SELECT Rank , Name, Platform, Year, Genre FROM SALES WHERE Name = 'FIFA 17' 
+AND Year = 2016;' 
 ``` {{5}}
 
 ![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.50.29.png?raw=true) {{6}}
@@ -282,7 +283,16 @@ As for MIN and MAX, they are used to find the minimum and maximum value of a tab
 
 And SUM keyword is used to find the sum of a given value
 
-When dealing with numeric data type, you will simple aggregate functions such as count, minimum, maximum, average, and sum.
+These functions are usually followed by GROUP BY keyword which is use to split the table into different piles based on the value of each row.
+
+**Question:  What is Nintendo's highest selling group by year? ** {{4}}
+
+```
+SELECT MAX(NA_SALES) FROM SALES WHERE Publisher = 'Nintendo'
+GROUP BY Year;
+``` {{5}}
+
+Answer: The highest selling in 2006 is $41.49 million thanks to Wii Sport
 
 
 ---
