@@ -59,20 +59,7 @@ And many more
 
 You will learn how to build a simple SQL query
 SQL Syntax SELECT...FROM
-(more advanced queries that include ) SQL aggregated functions
-Difference type of JOINs when working with multiple tables
-
-
-
-
-Why do we use SQL to assist us with data driven decisions? 
-
-one of the first reasons would be that companies mostly store data in Relational Database Management Systems (RDBMS) or in Relational Data Stream Management Systems (RDSMS) and you need SQL to access that data. SQL is the lingua franca of data: it gives you the ability to interact with almost any database or to even build your own locally!
-
-Not only SQL is a must-have skill for data scientists,  
-What is SQL?
-
-Used to accessing relational databases (is a language that is widely used by different database platforms and as a result some SQL syntax and functions may vary however pretty much similar and pretty much standard)
+and SQL summarising functions. Later in the course you will learn the difference type of JOINs when working with multiple tables
 
 
 ---
