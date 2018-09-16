@@ -155,6 +155,8 @@ key: "9e2bb70cfe"
 ```
 
 `@part1`
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2011.29.09.png?raw=true)
+
 - Retrieve all columns from the Sales table {{1}}
 
 ```
@@ -170,9 +172,13 @@ SELECT Rank, Name, Platform, Year, Genre, GLobal_Sales FROM SALES
 
 
 `@script`
-First case study, we will use a dataset from Video Game Global Sales. This dataset is based on a Kaggle's competition. Imagine that you work in a video game industry and you are tasked to carry out market research. Your job is to analyse sales trend. 
+Let's practice this in the first case study.
 
-First, lets retrieve all columns from the Sales table by executing the SELECT statement below:
+First case study, we will use a database from Kaggle's Video Game Global Sales competition. Imagine that you work in a video game industry and you are tasked to carry out a market research. Your job is to analyse sales trend. 
+
+Let's have a quick glance over the Sales table. Think about the SELECT statement needed to retrieve data ALL columns in this table.
+
+First, you will use SELECT * (asterisk) FROM Sales;
 
 The first question you may want answered is: What's all sales look like?
 
@@ -279,7 +285,7 @@ The most interesting functions of SQL
 
 
 ---
-## Practice time!
+## Let's practice!
 
 ```yaml
 type: "FinalSlide"
@@ -287,5 +293,5 @@ key: "b240739c0d"
 ```
 
 `@script`
-
+Time to put this into practice.
 
