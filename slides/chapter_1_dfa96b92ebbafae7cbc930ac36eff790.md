@@ -76,6 +76,32 @@ Used to accessing relational databases (is a language that is widely used by dif
 ## What is relational database?
 
 ```yaml
+type: "TwoColumns"
+key: "9810dbbd56"
+```
+
+`@part1`
+- Tables
+    
+    - fields / columns
+    
+    - rows / records
+
+- Relationship between tables
+
+
+`@part2`
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.27.11.png?raw=true) {{2}}
+
+
+`@script`
+
+
+
+---
+## What is relational database?
+
+```yaml
 type: "FullSlide"
 key: "b6de51e38e"
 ```
@@ -89,42 +115,6 @@ key: "b6de51e38e"
 
 
 ![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.27.11.png?raw=true) {{2}}
-
-
-`@script`
-Before deep diving into SQL, it’s important to have a basic understanding of relational database concept.
-
-Relational databases organise data into “tables” consisting of rows and columns. Each column in a database has a specific data type text, number, date and so on. 
-
-There are multiple database platforms as a result SQL will vary slightly. on this course we will focus on MS SQL Database. However if you chose to focus on a different environment such as PosgresSQL, Datacamp also offers a course “Joining data in Postgresql course” by Chester Ismay which may interest you.
-
-Later in the course you will see the difference types of aggregated functions which only work with certain data types. 
-
-Once you understand the basis of SQL syntax and functions when working with a relational database, you will be able to apply techniques to solve real world problems with confidence.
-
-
----
-## What is relational database?
-
-```yaml
-type: "TwoColumns"
-key: "fbb750e826"
-```
-
-`@part1`
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.27.11.png?raw=true) {{1}}
-
-
-`@part2`
-- Tables {{1}}
-    
-    - fields / columns (e.g text, number, date) {{2}}
-    
-    - rows / records {{3}}
-
-- Many database platforms have their own SQL syntax / functions {{4}}
-
-- SQL may vary, fundamentally very similar and pretty much standard {{5}}
 
 
 `@script`
