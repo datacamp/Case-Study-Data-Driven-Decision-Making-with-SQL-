@@ -210,8 +210,15 @@ key: "b7e5a08489"
 `@part2`
 **Question:  How does FIFA 17 game perform through the year? ** 
 
-`SELECT Rank, Name, Platform, Year, Genre FROM SALES 
-WHERE Name = 'FIFA 17'`
+```
+SELECT Rank
+, Name
+, Platform
+, Year
+, Genre 
+FROM SALES 
+WHERE Name = 'FIFA 17'
+```
 
 ![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.50.29.png?raw=true)
 
@@ -231,12 +238,19 @@ key: "b68404a3f8"
 ```
 
 `@part1`
-- Simple aggregate functions such as count, minimum, maximum, average, and sum 
+- Simple aggregate functions such as count, minimum, maximum, average, and sum {{1}}
 
 ```
-SELECT AVG(Global_Sales) FROM Sales
+SELECT COUNT(Name) FROM Sales;
 
-```
+SELECT AVG(Global_Sales) FROM Sales;
+
+SELECT MIN(Global_Sales) FROM Sales; 
+
+SELECT MAX(Global_Sales) FROM Sales; 
+
+SELECT SUM(Global_Sales) FROM Sales; 
+``` {{2}}
 
 
 `@script`
