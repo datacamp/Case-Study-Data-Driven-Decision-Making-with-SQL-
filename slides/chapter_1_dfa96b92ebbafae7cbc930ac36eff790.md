@@ -49,7 +49,7 @@ key: "19ff28420e"
 `@script`
 - Structured Query Language
 
-- Used to access & interrogate relational databases (is a language that is widely used by different database platforms and as a result some SQL syntax and functions may vary however pretty much similar and pretty much standard)
+- Used to access & interrogate relational databases
 
 - Perform fundamental data exploring tasks such as 
 - retrieve data
@@ -59,7 +59,9 @@ And many more
 
 You will learn how to build a simple SQL query
 SQL Syntax SELECT...FROM
-and SQL summarising functions. Later in the course you will learn the difference type of JOINs when working with multiple tables
+and SQL summarising functions.
+
+Later in the course you will learn the difference type of JOINs when working with multiple tables
 
 
 ---
@@ -94,8 +96,6 @@ Relational databases organise data into “tables” consisting of rows and colu
 There are usually more than one tables in a database.
 
 They can be joined to build queries where relationships between tables exist.
-
-Once you understand the basis of SQL syntax and functions when working with a relational database, you will be able to apply techniques to solve real world problems with confidence.
 
 
 ---
@@ -186,7 +186,7 @@ key: "73171c367d"
 ![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.14.48.png?raw=true) {{4}}
 
 ```
-SELECT Rank, Name, Platform, Year, Genre, Global_Sales FROM SALES
+SELECT Rank, Name, Platform, Year, Genre, Global_Sales FROM Sales
 WHERE Year = 2016 ORDER BY Rank;
 ``` {{5}}
 
@@ -197,7 +197,7 @@ WHERE Year = 2016 ORDER BY Rank;
 `@script`
 WHERE and ORDER keywords are optional from select statement.
 
-WHERE is used to apply condition(s) to a query. It can filter out the rows that we want to show while ORDER BY is used if the result rows should be in a specific order
+You noticed that in the last SQL query, WHERE is used to apply condition(s) to a query. It can filter out the rows that we want to show while ORDER BY is used if the result rows should be in a specific order
  
 Let's look at this question. What games were sold in 2016? Think about what select statement requires to return this result.
 
@@ -227,7 +227,7 @@ SELECT Rank , Name, Platform, Year, Genre FROM SALES WHERE Name = 'FIFA 17'
 `@script`
 Recall from the previous slides that Sale table is consisted of text and numeric data type. 
 
-SQL requires single quotes around text values  while this may differ in other database platforms e.g use of double quotes instead. However, numeric fields should not be enclosed in quotes
+SQL requires single quotes around text values  while this may differ in other database platforms such as use of double quotes instead. However, numeric fields should not be enclosed in quotes
 
 We will learn more about these two data types in later chapters.
 
@@ -261,17 +261,28 @@ SELECT SUM(Global_Sales) FROM Sales;
 
 - GROUP BY split the table into different piles based on the value of each row {{3}}
 
-**Question:  What is Nintendo's highest selling of all time? ** {{4}}
+**Question:  What is Nintendo's highest selling group by year? ** {{4}}
 
 ```
-SELECT MAX(NA_SALES) FROM SALES WHERE Publisher = 'Nintendo';
+SELECT MAX(NA_SALES) FROM SALES WHERE Publisher = 'Nintendo'
+GROUP BY Year;
 ``` {{5}}
 
-**Answer: $41.49 million ** {{6}}
+**Answer: The highest selling in 2006 is $41.49 million thanks to Wii Sport ** {{6}}
 
 
 `@script`
-The most interesting functions of SQL
+SQL has keywords for aggregate functions namely
+
+COUNT, which is a keyword used to return total number of rows
+
+We use AVG keyword in order to find the average of a given value. 
+
+As for MIN and MAX, they are used to find the minimum and maximum value of a table. 
+
+And SUM keyword is used to find the sum of a given value
+
+When dealing with numeric data type, you will simple aggregate functions such as count, minimum, maximum, average, and sum.
 
 
 ---
