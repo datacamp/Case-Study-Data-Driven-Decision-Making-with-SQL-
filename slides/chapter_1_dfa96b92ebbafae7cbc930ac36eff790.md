@@ -241,35 +241,27 @@ You can improve queries built earlier by adding WHERE keyword followed by condit
 ## Text Fields vs. Numeric Fields
 
 ```yaml
-type: "TwoColumns"
-key: "b7e5a08489"
+type: "FullCodeSlide"
+key: "c48ac2161e"
 ```
 
 `@part1`
-- In this table, there are 2 data types: Text and Numeric {{1}}
-
 - Text requires single quotes around text values {{2}}
 
 - Numeric fields should not be enclosed in quotes {{3}}
 
-
-`@part2`
 **Question:  How does FIFA 17 game perform through the year? ** {{4}}
 
 ```
-SELECT Rank
-, Name
-, Platform
-, Year
-, Genre 
-FROM SALES 
-WHERE Name = 'FIFA 17' 
+SELECT Rank , Name, Platform, Year, Genre FROM SALES WHERE Name = 'FIFA 17' 
 ``` {{5}}
 
 ![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.50.29.png?raw=true) {{6}}
 
 
 `@script`
+Recall from the previous slides that Sale table is consisted of text and numeric data type. 
+
 SQL requires single quotes around text values  while this may differ in other database platforms e.g use of double quotes instead. However, numeric fields should not be enclosed in quotes
 
 We will learn more about these two data types in later chapters.
