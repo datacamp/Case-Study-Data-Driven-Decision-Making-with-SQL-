@@ -33,7 +33,7 @@ key: "19ff28420e"
 `@part1`
 - Structured Query Language {{2}}
 
-- Used to accessing & interrogating relational databases {{3}}
+- Used to access & interrogate relational databases {{3}}
 
 - Perform fundamental data exploring tasks such as {{4}}
 
@@ -49,11 +49,14 @@ key: "19ff28420e"
 `@script`
 - Structured Query Language
 
-- Used to accessing & interrogating relational databases (is a language that is widely used by different database platforms and as a result some SQL syntax and functions may vary however pretty much similar and pretty much standard)
-Perform fundamental data exploring tasks such as 
-retrieve data
-manipulate data 
-aggregate data 
+- Used to access & interrogate relational databases (is a language that is widely used by different database platforms and as a result some SQL syntax and functions may vary however pretty much similar and pretty much standard)
+
+- Perform fundamental data exploring tasks such as 
+- retrieve data
+- manipulate data 
+- summarise data 
+And many more
+
 You will learn how to build a simple SQL query
 SQL Syntax SELECT...FROM
 (more advanced queries that include ) SQL aggregated functions
@@ -95,7 +98,15 @@ key: "9810dbbd56"
 
 
 `@script`
+Before deep diving into SQL, it’s important to have a basic understanding of relational database concept.
 
+Relational databases organise data into “tables” consisting of rows and columns. Each column in a database has a specific data type text, number, date and so on. 
+
+There are multiple database platforms as a result SQL will vary slightly. on this course we will focus on MS SQL Database. However if you chose to focus on a different environment such as PosgresSQL, Datacamp also offers a course “Joining data in Postgresql course” by Chester Ismay which may interest you.
+
+Later in the course you will see the difference types of aggregated functions which only work with certain data types. 
+
+Once you understand the basis of SQL syntax and functions when working with a relational database, you will be able to apply techniques to solve real world problems with confidence.
 
 
 ---
