@@ -23,6 +23,22 @@ In this video, you'll be learning about building basic SQL queries.
 
 
 ---
+## Why SQL?
+
+```yaml
+type: "FullSlide"
+key: "261a7ff134"
+```
+
+`@part1`
+SQL
+
+
+`@script`
+
+
+
+---
 ## What is SQL?
 
 ```yaml
@@ -105,14 +121,18 @@ key: "5ee4acfdd2"
 ```
 
 `@part1`
-```
-SELECT <Field Names> FROM <Table Name>
-SELECT * FROM <Table Name>
-SELECT <Field1>, <Field2>, <Field3> FROM <Table Name>
-```
-- Always remember to only retrieve columns that you need. 
+- Select statement begins with SELECT keyword {{1}}
 
-- `SELECT *` may cause performance to suffer from the fact that your query pulls up too much data)
+```
+SELECT <Field Names> FROM <Table Name>;
+SELECT * FROM <Table Name>;
+SELECT <Field1>, <Field2>, <Field3> FROM <Table Name>;
+``` {{2}}
+- Always remember to only retrieve columns that you need {{3}}
+
+- `SELECT *` may cause performance to suffer from the fact that your query pulls up too much data) {{4}}
+
+- The semi-colon (;) indicates that SQL statment is complete and is ready to be interpreted {{5}}
 
 
 `@script`
@@ -122,7 +142,6 @@ SELECT <Field1>, <Field2>, <Field3> FROM <Table Name>
  
 - `SELECT Year,Publisher, Revenue FROM Sales`
 
-## <PICTURE>
 
 Always remember to only retrieve columns that you need (as it may cause performance to suffer from the fact that your query pulls up too much data)
 
@@ -169,18 +188,18 @@ key: "73171c367d"
 ```
 
 `@part1`
-- WHERE is used to apply condition(s) to a query
+- WHERE is used to apply condition(s) to a query {{1}}
 
-- ORDER BY is used if the result rows should be in a specific order
+- ORDER BY is used if the result rows should be in a specific order {{2}}
 
 **List records of Sales in 2016? **
-
+{{3}}
 ```
 SELECT Rank, Name, Platform, Year, Genre, GLobal_Sales FROM SALES
 WHERE Year = 2016 ORDER BY Rank
-``` 
+``` {{4}}
 
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.14.48.png?raw=true)
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.14.48.png?raw=true) {{5}}
 
 
 `@script`
@@ -251,6 +270,8 @@ SELECT MAX(Global_Sales) FROM Sales;
 
 SELECT SUM(Global_Sales) FROM Sales; 
 ``` {{2}}
+
+- GROUP BY split the table into different piles based on the value of each row
 
 
 `@script`
