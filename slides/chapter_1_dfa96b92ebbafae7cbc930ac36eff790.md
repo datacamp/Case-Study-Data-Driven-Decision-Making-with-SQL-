@@ -13,13 +13,11 @@ key: "8ed49f4555"
 `@lower_third`
 
 name: Nujcharee Haswell (Ped)
-title: Business Intelligent Specialist / Data Scientist
+title: Data Intelligence Specialist / Data Scientist
 
 
 `@script`
-Hi, I am Nujcharee Haswell (Ped), welcome to the course “Case Study: Data Driven Decision Making with SQL”. 
-
-In this video, you'll be learning about building basic SQL queries.
+Hi, welcome to the course I’m Nujcharee Haswell and I’m a data intelligence specialist and a data scientist. I’ll be your instructor for Case Study Data Driven Decision Making with SQL.
 
 
 ---
@@ -35,33 +33,20 @@ key: "19ff28420e"
 
 - Used to access & interrogate relational databases {{3}}
 
-- Perform fundamental data exploring tasks such as {{4}}
+    - retrieving data {{4}}
 
-    - retrieve data {{5}}
+    - manipulating data {{5}}
 
-    - manipulate data {{6}}
+    - summarising data {{6}}
 
-    - summarise data {{7}}
-
-- Many more {{8}}
+- Explore and summarize a real life database. {{7}}
 
 
 `@script`
-- Structured Query Language
+SQL Stands for structured query language.
+You can do many thing with a database using sql such as accessing and interrogating relational databases and other things like retrieving, manipulating or aggregating data with SQL and many more.
 
-- Used to access & interrogate relational databases
-
-- Perform fundamental data exploring tasks such as 
-- retrieve data
-- manipulate data 
-- summarise data 
-And many more
-
-You will learn how to build a simple SQL query
-SQL Syntax SELECT...FROM
-and SQL summarising functions.
-
-Later in the course you will learn the difference type of JOINs when working with multiple tables
+In this video you will be building sql queries to explore and summarize a real life database.
 
 
 ---
@@ -91,11 +76,13 @@ key: "9810dbbd56"
 `@script`
 Before deep diving into SQL, it’s important to have a basic understanding of relational database concept.
 
-Relational databases organise data into “tables” consisting of rows and columns. Each column in a database has a specific data type text, number, date and so on. 
+Relational databases organise data into “table” objects consisting of rows and columns. Each column in a database has a specific data type such as text, number, date and so on. 
 
 There are usually more than one tables in a database.
 
 They can be joined to build queries where relationships between tables exist.
+
+You will be learning about  more JOINing tables later in the course.
 
 
 ---
@@ -124,11 +111,16 @@ SELECT <Field1>, <Field2>, <Field3> FROM <Table Name>;
 `@script`
 A Select statement begins with SELECT keyword followed by FROM clause.
 
-The top select statement will retrieve data from a single column from a single table. While the second select statement select ALL columns within a table. Last select statement select three columns from a table.
+The first select statement will retrieve data from a single column from a single table. 
 
-Always remember to only retrieve columns that you need as SELECT ALL columns may cause performance to suffer from the fact that query pulls up too much data)
+The special character asterisk can be used in a select statement in order to retrieve ALL columns from a table as you can see in the second select statement.
 
-It is also a good practise to always put the semi-colon (;) which indicates that SQL statement is complete and is ready to be interpreted
+It is possible to select more than one columns from a table as per the third sample right here.
+
+Always remember to only retrieve columns that you need as SELECT ALL columns may cause performance to suffer from the fact that query pulls up too much data.
+
+
+It is also a good practise to always put the semi-colon (;) which indicates that SQL statement is complete and is ready to be interpreted.
 
 
 ---
@@ -154,17 +146,15 @@ SELECT Name, Year FROM Sales where Rank = 1;
 
 
 `@script`
-Let's practice this in the first case study.
-
-We will use a database from Kaggle's Video Game Global Sales competition. Imagine that you work in a video game industry and you are tasked to carry out a market research. Your job is to analyse sales trend. 
+Let’s apply this with a real database. For the first case study you will use a database from Kaggle's Video Game Global Sales competition. Imagine that you work in a video game industry and you are tasked to carry out a market research. Your job is to analyse sales trend. 
 
 Let's have a quick glance over the Sales table here. Think about the SELECT statement needed to retrieve ALL columns from this table.
 
-You will use SELECT * (asterisk) FROM Sales;
+You will use SELECT *  FROM Sales;
 
 The first question you may want answered is: What is the name of Number 1 game in 2006? Let's think about how you will write this in a select statement.
 
-You can revise the first query by only retrieving the columns you want in your result.
+That’s right.
 
 
 ---
@@ -199,7 +189,11 @@ WHERE and ORDER keywords are optional from select statement.
 
 You noticed that in the last SQL query, WHERE is used to apply condition(s) to a query. It can filter out the rows that we want to show while ORDER BY is used if the result rows should be in a specific order
  
-Let's look at this question. What games were sold in 2016? Think about what select statement requires to return this result.
+Let's look at this question. What games were sold in 2016? 
+
+Think about what select statement requires to return this result.
+
+There you got it.
 
 
 ---
@@ -236,6 +230,8 @@ Let's try to find answer for this question. How does the game FIFA 17 perform in
 
 Think about how you will formulate the query.
 
+That’s right!
+
 
 ---
 ## Summarising data
@@ -246,7 +242,7 @@ key: "b68404a3f8"
 ```
 
 `@part1`
-- Simple aggregate functions such as count, minimum, maximum, average, and sum {{1}}
+- Aggregate functions such as count, minimum, maximum, average, and sum {{1}}
 
 ```
 SELECT COUNT(Name) FROM Sales;
@@ -260,7 +256,7 @@ SELECT MAX(Global_Sales) FROM Sales;
 SELECT SUM(Global_Sales) FROM Sales; 
 ``` {{2}}
 
-- GROUP BY split the table into different piles based on the value of each row {{3}}
+- GROUP BY split the table into different groups based on the value of each row {{3}}
 
 **Question:  What is Nintendo's highest selling group by year? ** {{4}}
 
@@ -273,24 +269,21 @@ GROUP BY Year;
 
 
 `@script`
-SQL has keywords for aggregate functions namely
+After exploring content of a table next you may need to summarize data. SQL has keywords for aggregate functions namely
 
 COUNT, which is a keyword used to return total number of rows
 
 We use AVG keyword in order to find the average of a given value. 
 
-As for MIN and MAX, they are used to find the minimum and maximum value of a table. 
+As for MIN and MAX, they are used to find the minimum and maximum value of a table respectively.
 
 And SUM keyword is used to find the sum of a given value
 
-These functions are usually followed by GROUP BY keyword which is use to split the table into different piles based on the value of each row.
+These functions are usually followed by GROUP BY keyword which is use to split the table into different groupa based on the value of each row.
 
-**Question:  What is Nintendo's highest selling group by year? ** {{4}}
+Let’s put this together to answer a question 
 
-```
-SELECT MAX(NA_SALES) FROM SALES WHERE Publisher = 'Nintendo'
-GROUP BY Year;
-``` {{5}}
+What is Nintendo's highest selling group by year?
 
 Answer: The highest selling in 2006 is $41.49 million thanks to Wii Sport
 
