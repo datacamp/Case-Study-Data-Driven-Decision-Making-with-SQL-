@@ -31,13 +31,13 @@ key: "19ff28420e"
 `@part1`
 - Structured Query Language {{2}}
 
-- Used to  {{3}}
+- Interact with relational databases {{3}}
 
-    - retrieving data {{4}}
+    - retrieve data {{4}}
 
-    - manipulating data {{5}}
+    - manipulate data {{5}}
 
-    - summarising data {{6}}
+    - summarise data {{6}}
 
 - Explore and summarise a real life database. {{7}}
 
