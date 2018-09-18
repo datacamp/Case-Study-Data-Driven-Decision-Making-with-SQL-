@@ -31,7 +31,7 @@ key: "19ff28420e"
 `@part1`
 - Structured Query Language {{2}}
 
-- Used to access & interrogate relational databases {{3}}
+- Used to  {{3}}
 
     - retrieving data {{4}}
 
@@ -39,14 +39,15 @@ key: "19ff28420e"
 
     - summarising data {{6}}
 
-- Explore and summarize a real life database. {{7}}
+- Explore and summarise a real life database. {{7}}
 
 
 `@script`
 SQL Stands for structured query language.
-You can do many thing with a database using sql such as accessing and interrogating relational databases and other things like retrieving, manipulating or aggregating data with SQL and many more.
 
-In this video you will be building sql queries to explore and summarize a real life database.
+You can use SQL to interact with relational databases and other things such as retrieving, manipulating or aggregating data and many more.
+
+In this video you will be building sql queries to explore and summarise a real life database.
 
 
 ---
@@ -60,9 +61,9 @@ key: "9810dbbd56"
 `@part1`
 - Data organised in "Table" objects {{1}} 
     
-    - columns {{2}}
+    - rows {{2}}
     
-    - rows {{3}}
+    - columns {{3}}
 
 - More than one tables in the database {{4}}
 
@@ -82,7 +83,7 @@ There are usually more than one tables in a database.
 
 They can be joined to build queries where relationships between tables exist.
 
-You will be learning about  more JOINing tables later in the course.
+You will be learning more about JOINing tables later in the course.
 
 
 ---
@@ -98,14 +99,21 @@ key: "5ee4acfdd2"
 
 ```
 SELECT <Field Names> FROM <Table Name>;
-SELECT * FROM <Table Name>;
-SELECT <Field1>, <Field2>, <Field3> FROM <Table Name>;
 ``` {{2}}
-- Always remember to only retrieve columns that you need {{3}}
 
-- `SELECT *` may cause performance to suffer from the fact the query pulls up too much data {{4}}
+```
+SELECT * FROM <Table Name>;
+``` {{3}}
 
-- The semi-colon (;) indicates that SQL statment is complete and is ready to be interpreted {{5}}
+```
+SELECT <Field1>, <Field2>, <Field3> FROM <Table Name>;
+``` {{4}}
+
+- Always remember to only retrieve columns that you need {{5}}
+
+- `SELECT *` may cause performance to suffer from the fact the query pulls up too much data {{6}}
+
+- The semi-colon (;) indicates that SQL statment is complete and is ready to be interpreted {{7}}
 
 
 `@script`
@@ -140,7 +148,7 @@ SELECT * FROM SALES;
 **Question:  What is the name of Number 1 game in 2006? ** {{3}}
 
 ```
-SELECT Name, Year FROM Sales where Rank = 1;
+SELECT Name, Year FROM Sales WHERE Rank = 1;
 ``` {{4}}
 **Answer:  Wii Sport ** {{5}}
 
@@ -194,43 +202,6 @@ Let's look at this question. What games were sold in 2016?
 Think about what select statement requires to return this result.
 
 There you got it.
-
-
----
-## Text Fields vs. Numeric Fields
-
-```yaml
-type: "FullCodeSlide"
-key: "c48ac2161e"
-```
-
-`@part1`
-- Text requires single quotes around text values {{2}}
-
-- Numeric fields should not be enclosed in quotes {{3}}
-
-**Question:  How does the game FIFA 17 perform in 2016? ** {{4}}
-
-```
-SELECT Rank , Name, Platform, Year, Genre FROM SALES WHERE Name = 'FIFA 17' 
-AND Year = 2016;' 
-``` {{5}}
-
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-16%20at%2000.50.29.png?raw=true) {{6}}
-
-
-`@script`
-Recall from the previous slides that Sale table is consisted of text and numeric data type. 
-
-SQL requires single quotes around text values  while this may differ in other database platforms such as use of double quotes instead. However, numeric fields should not be enclosed in quotes
-
-We will learn more about these two data types in later chapters.
-
-Let's try to find answer for this question. How does the game FIFA 17 perform in 2016?
-
-Think about how you will formulate the query.
-
-That’s right!
 
 
 ---
@@ -297,5 +268,5 @@ key: "b240739c0d"
 ```
 
 `@script`
-Time to put this into practice.
+Its your turn to practise!
 
